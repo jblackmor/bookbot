@@ -1,7 +1,7 @@
 from stats import get_num_words
 
 def get_book_text(path):
-    with open(path) as f:
+    with open(path, encoding='utf8') as f:
         return f.read()
 
 def count_chars(text):
@@ -13,11 +13,13 @@ def count_chars(text):
     return count_dict
 
 def report(book_path, num_words, sorted_dict):
-    print(f'---- Begin report of {book_path} ----')
-    print(f'There are {num_words} words found in the book/document.\n')
-    for k,v in sorted_dict.items():
-        print(f"The '{k}' character was found {v} times.")
-    print('---- End report ----')
+    print(f"{num_words} words found in the document")
+    
+    # print(f'---- Begin report of {book_path} ----')
+    # print(f'There are {num_words} words found in the book/document.\n')
+    # for k,v in sorted_dict.items():
+    #     print(f"The '{k}' character was found {v} times.")
+    # print('---- End report ----')
 
 def main():
     book_path = 'books/frankenstein.txt'
