@@ -7,7 +7,7 @@ This repository contains a Python script that performs static analysis on text f
 2. **Character Frequency**: It counts how many times each alphabetical character (A-Z) appears in the novel
 Example: "The 'x' character was found 'y' times."
 
-This project was created in collaboration with **[Boot.Dev](https://boot.dev)**.
+BookBot is my first **[Boot.dev](https://www.boot.dev)** project!
 
 ## Features
 
